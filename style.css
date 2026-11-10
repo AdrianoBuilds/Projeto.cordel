@@ -1,24 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&family=Sriracha&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+
 *{
     margin: 0;
     padding: 0;
+    
+  
+}
+
+:root{
+    --fonte-titulo:"Passion One", sans-serif;
+    --fonte-cursiva:"Sriracha", cursive;
+    --fonte-padrao:Verdana, Geneva, Tahoma, sans-serif;
+
 }
 
 html,body{
     min-height: 100vh;
     background-color: darkgray;
+    font-family: var(--fonte-padrao);
+   
 }
 header{
-    padding-top: 50px;
-    padding-bottom: 50px;
+    
+    
     background-color: black;
     color: white;
     text-align: center;
+    font-family: var(--fonte-titulo);
     
 }
 header>h1{
+    padding-top: 50px;
     font-variant: small-caps;
+    font-size: 10vw;
+    
+}
+header>p{
+    padding-bottom: 50px;
 }
 header>a{
+    
     text-decoration: none;
     color: white;
 }
@@ -29,8 +53,11 @@ header>a:hover{
 section{
     padding-top: 10vh;
     padding-bottom: 10vh;
-    padding-left: 10vh;
+    padding-left: 30px;
     line-height: 2em;
+    font-family: var(--fonte-cursiva);
+    font-size: 3.5vw;
+   
 }
 
 .normal{
@@ -41,7 +68,8 @@ section{
     background-color: gray;
     color: white;
     background-color: rgba(0, 0, 0, 0.774);
-    width: 400px;
+    display: inline-block;
+    padding: 5px;
 }
 
 footer{
